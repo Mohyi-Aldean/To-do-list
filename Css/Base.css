@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #bc71fd;
+  text-decoration: underline;
+}
+
+.task-form button,
+.task-ul li button {
+  background-color: #7b2cbf;
+}
+
+.task-form button:hover,
+.task-ul li button:hover {
+  background-color: #754c97;
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task-title {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.task-description {
+  color: #cccccc;
+  font-size: 14px;
+}
