@@ -110,3 +110,79 @@
 .task-ul li button:hover {
   background-color: #ff0000;
 }
+
+@media (max-width: 768px) {
+  .task-form, .task-list {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .task-ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .task-ul li .left-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .task-ul li .right-section {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .task-form input[type="text"],
+  .task-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .task-description {
+    font-size: 13px;
+  }
+
+  .task-done {
+    position: static;
+    color: #90ee90;
+    font-weight: bold;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  .task-ul li button {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-form, .task-list {
+    padding: 10px;
+  }
+
+  .task-ul li {
+    padding: 10px;
+    margin: 15px 0;
+  }
+
+  .task-ul li .right-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .task-form input[type="text"]::placeholder {
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+}
